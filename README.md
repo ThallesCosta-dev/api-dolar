@@ -1,6 +1,7 @@
 # Cotação do Dólar - Extensão para Chrome
 
-![image](https://github.com/user-attachments/assets/43ec8623-26cf-4481-aeeb-a0f8351376ed)![image](https://github.com/user-attachments/assets/f03b2214-c9bb-48e1-b80c-4b59f9c034a1)
+![image](https://github.com/user-attachments/assets/cf0c50d1-a1e2-4104-b69a-3aeea6301039) ![image](https://github.com/user-attachments/assets/d7850904-af3f-43d1-9461-d1003d59ef94)
+
 
 
 
