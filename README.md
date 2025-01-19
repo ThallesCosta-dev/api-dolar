@@ -36,6 +36,8 @@ Uma extensão para Chrome que permite acompanhar em tempo real a cotação do d�
 
 ## 📦 Estrutura do Projeto
 
+
+ ```bash
 ├── manifest.json
 ├── popup.html
 ├── popup.css
@@ -44,6 +46,7 @@ Uma extensão para Chrome que permite acompanhar em tempo real a cotação do d�
 ├── chart.js
 └── assets/
 └── icons/
+```
 
 ## 🔄 Como Funciona
 
