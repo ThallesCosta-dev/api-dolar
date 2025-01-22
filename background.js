@@ -3,14 +3,14 @@ let currentCurrency = 'BRL';
 let previousPrice = null;
 
 function formatCompactNumber(number) {
-    number = Math.round(number);
     if (number >= 1000) {
         if (number < 100000) {
             return (number/1000).toFixed(1) + 'k';
         }
         return Math.floor(number/1000) + 'k';
     }
-    return number.toString();
+    // Mostra até 2 casas decimais para números menores que 1000
+    return number.toFixed(2);
 }
 
 function calculatePriceChange(currentPrice, previousPrice) {
@@ -41,8 +41,9 @@ async function fetchPrice() {
             useGrouping: true
         });
         
-        chrome.action.setBadgeText({ text: price.toFixed(2) });
+        chrome.action.setBadgeText({ text: formatCompactNumber(price) });
         chrome.action.setBadgeBackgroundColor({ color: '#2B823A' });
+        chrome.action.setBadgeTextColor({ color: 'white' });
         
         const priceChange = calculatePriceChange(price, previousPrice);
         previousPrice = price;

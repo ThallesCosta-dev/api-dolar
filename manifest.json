@@ -1,23 +1,29 @@
 {
   "manifest_version": 3,
-  "name": "Bitcoin Bity Price",
+  "name": "Cotação do Dólar",
   "version": "1.0",
-  "description": "Mostra a cotação do Bitcoin da Bity direto na barra de ferramentas",
+  "description": "Mostra a cotação do Dólar em tempo real",
   "permissions": ["storage"],
   "host_permissions": [
-    "https://api.binance.com/"
+    "https://economia.awesomeapi.com.br/"
   ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "48": "icon48.png"
+      "16": "images/dollar16.png",
+      "32": "images/dollar32.png",
+      "48": "images/dollar48.png",
+      "128": "images/dollar128.png"
     }
   },
   "background": {
     "service_worker": "background.js"
   },
   "icons": {
-    "48": "icon48.png"
+    "16": "images/dollar16.png",
+    "32": "images/dollar32.png",
+    "48": "images/dollar48.png",
+    "128": "images/dollar128.png"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
